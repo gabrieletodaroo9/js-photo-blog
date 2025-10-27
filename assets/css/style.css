@@ -9,14 +9,15 @@
 /* GENERICS */
 
 body {
-    font-family: sans-serif;
+    font-family: "Edu TAS Beginner", cursive;
 }
 
 header {
     background-image: url(../img/wall.png);
-    padding: 3rem 0;
+    padding: 2rem 0;
+
     h1 {
-        font-family: "Edu TAS Beginner", cursive;
+
         font-size: 4.5rem;
         font-weight: bold;
         height: 100%;
@@ -28,23 +29,34 @@ main {
     padding-top: 2rem;
 }
 
+/* UTILS */
+
 /* CARD */
 
 
-.polaroid{
+.polaroid {
     position: relative;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #fff;
 
-    .user-img{
+    p:first-of-type {
+        font-family: "Sometype Mono", monospace;
+        color: gray;
+        padding-top: 1rem;
+        
+    }
+
+    .user-img {
         width: 100%;
     }
-    p{
-        padding-top: 1rem;
+
+    p {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        margin-bottom: 0;
     }
-    .pin{
+
+    .pin {
         width: 30px;
         position: absolute;
         top: -0.5rem;
@@ -53,3 +65,26 @@ main {
     }
 }
 
+/* MEDIA QUERY */
+
+@media screen and ( max-width: 1200px ){
+    header h1{
+        font-size: 4.2rem;
+    }
+}
+
+@media screen and ( max-width: 992px ){
+    header h1{
+        font-size: 4rem;
+    }
+}
+@media screen and ( max-width: 768px ){
+    header h1{
+        font-size: 3.5rem;
+    }
+}
+@media screen and ( max-width: 576px ){
+    header h1{
+        font-size: 3rem;
+    }
+}

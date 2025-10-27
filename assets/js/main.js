@@ -60,8 +60,8 @@ fetch(url)
             
             // Creo il secondo paragrafo (testo)
             const titleEl = document.createElement("p")
-            // Aggiungo il testo col template literal
-            titleEl.innerHTML = `${title}`
+            // Aggiungo il testo col template literal e lo rendo maiuscolo
+            titleEl.innerHTML = `${title.toUpperCase()}`
             // Aggiungo il nodo al div "polaroid"
             polaroidEl.appendChild(titleEl)
             console.log(colEl);
