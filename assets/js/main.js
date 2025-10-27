@@ -18,40 +18,62 @@ fetch(url)
             // console.log(id,title,date,url);
 
             // -Creo il nodo della DOM corrispondente alla polaroid
-            colEl = document.createElement("div")
+            const colEl = document.createElement("div")
             // - Al div aggiungo le classi "col-12 col-md-6 col-lg-4"
             colEl.classList.add("col-12", "col-md-6", "col-lg-4")
             // console.log(polaroidEl);
 
             // - Creo un altro div
-            polaroidEl = document.createElement("div")
+            const polaroidEl = document.createElement("div")
             //  a cui do classe "polaroid"
             polaroidEl.classList.add("polaroid")
             // e lo appendo dentro il div creato precedentemente
             colEl.appendChild(polaroidEl)
             // console.log(colEl);
-            
 
+            // Creo l'immagine
+            const imgPinEl = document.createElement("img")
+            // a cui do la classe "pin"
+            imgPinEl.classList.add("pin")
+            // imposto l'src staticamente sull'url della foto
+            imgPinEl.src = "./assets/img/pin.svg"
+            polaroidEl.appendChild(imgPinEl)
+
+
+            // Creo l'immagine
+            const imgUserEl = document.createElement("img")
+            // gli aggiungo la classe "user-img"
+            imgUserEl.classList.add("user-img")
+            // imposto l'src dinamicamente col template literal
+            imgUserEl.src = `${url}`
+            // Aggiungo il nodo al div "polaroid"
+            polaroidEl.appendChild(imgUserEl)
+            // console.log(colEl);
+
+            // Creo il primo paragrafo (date)
+            const dateEl = document.createElement("p")
+            // Aggiungo il testo col template literal
+            dateEl.innerHTML = `${date}`
+            // Aggiungo il nodo al div "polaroid"
+            polaroidEl.appendChild(dateEl)
+            // console.log(colEl);
+            
+            // Creo il secondo paragrafo (testo)
+            const titleEl = document.createElement("p")
+            // Aggiungo il testo col template literal
+            titleEl.innerHTML = `${title}`
+            // Aggiungo il nodo al div "polaroid"
+            polaroidEl.appendChild(titleEl)
+            console.log(colEl);
+            
         });
+        // Inserisco dentro l'elemento row dinamicamente la colonna che abbiamo creato
 
     })
 
 
 
-// Creo l'immagine a cui do la classe "pin"
-// imposto l'src staticamente sull'url della foto
 
-// Creo l'immagine
-// gli aggiungo la classe "user-img"
-// imposto l'src dinamicamente col template literal
-// Aggiungo il nodo al div "polaroid"
 
-// Creo il primo paragrafo (data)
-// Aggiungo il testo col template literal
-// Aggiungo il nodo al div "polaroid"
 
-// Creo il secondo paragrafo (testo)
-// Aggiungo il testo col template literal
-// Aggiungo il nodo al div "polaroid"
 
-// Inserisco dentro l'elemento row dinamicamente la colonna che abbiamo creato
