@@ -3,25 +3,45 @@
 
 // Creo una variabile per richiamare il nodo della DOM riferito a "row"
 
+const rowEl = document.getElementById("row")
+
 // Effettuo una chiamata AJAX con fetch per estrarre i dati dall'API
+url = "https://lanciweb.github.io/demo/api/pictures/"
+fetch(url)
+    .then(res => res.json())
+    .then(data => {
+        // Dopo averli estratti ciclo dentro all'array per poter interagire con ogni singolo elemento
+        data.forEach(obj => {
+            // - Destrutturo l'oggetto e salvo dentro una variabile ogni proprietà
+            //    console.log(obj);
+            const { id, title, date, url } = obj
+            // console.log(id,title,date,url);
 
-// Dopo averli estratti ciclo dentro all'array per poter interagire con ogni singolo elemento
+            // -Creo il nodo della DOM corrispondente alla polaroid
+            colEl = document.createElement("div")
+            // - Al div aggiungo le classi "col-12 col-md-6 col-lg-4"
+            colEl.classList.add("col-12", "col-md-6", "col-lg-4")
+            // console.log(polaroidEl);
 
-// - Destrutturo l'oggetto e salvo dentro una variabile ogni proprietà
+            // - Creo un altro div
+            polaroidEl = document.createElement("div")
+            //  a cui do classe "polaroid"
+            polaroidEl.classList.add("polaroid")
+            // e lo appendo dentro il div creato precedentemente
+            colEl.appendChild(polaroidEl)
+            // console.log(colEl);
+            
 
-// -Creo il nodo della DOM corrispondente alla polaroid
-// -Creo un array in cui salvo le classi del div principale "col-12 col-md-6 col-lg-4"
-// - Creo un div
-// - Al div aggiungo le classi salvate nella variabile usando l'operatore spread
+        });
 
-// - Creo un altro div
-//  a cui do classe "polaroid" 
-// e lo appendo dentro il div creato precedentemente
+    })
+
+
 
 // Creo l'immagine a cui do la classe "pin"
 // imposto l'src staticamente sull'url della foto
 
-// Creo l'immagine 
+// Creo l'immagine
 // gli aggiungo la classe "user-img"
 // imposto l'src dinamicamente col template literal
 // Aggiungo il nodo al div "polaroid"
