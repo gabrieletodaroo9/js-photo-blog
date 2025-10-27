@@ -66,9 +66,9 @@ fetch(url)
             polaroidEl.appendChild(titleEl)
             console.log(colEl);
             
+            // Inserisco dentro l'elemento row dinamicamente la colonna che abbiamo creato
+            rowEl.appendChild(colEl)
         });
-        // Inserisco dentro l'elemento row dinamicamente la colonna che abbiamo creato
-
     })
 
 
