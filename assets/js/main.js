@@ -68,6 +68,7 @@ fetch(url)
             
             // Inserisco dentro l'elemento row dinamicamente la colonna che abbiamo creato
             rowEl.appendChild(colEl)
+            
         });
     })
 
