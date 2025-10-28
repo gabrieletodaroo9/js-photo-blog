@@ -70,15 +70,28 @@ fetch(url)
             rowEl.appendChild(colEl)
 
             // Seleziono i nodi della DOM relativi all'overlay, quello relativo al bottone e quello relativo all'img dentro l'overlay
-            
-            // Creo un event listener al click sulla polaroid
-            
-            // -Cambio dinamicamente l'src dell'img dentro l'overlay 
 
-            // -Rimuovo il d-none dall'overlay
+            const overlayEl = document.getElementById("overlay")
+            const btnOverlayEl = document.getElementById("btn-overlay")
+            const imgOverlayEl = document.getElementById("img-overlay")
+
+            console.log(overlayEl, btnOverlayEl, imgOverlayEl);
+
+            // Creo un event listener al click sulla polaroid
+            polaroidEl.addEventListener("click", () => {
+
+                // -Cambio dinamicamente l'src dell'img dentro l'overlay 
+                imgOverlayEl.src = url
+
+                // -Rimuovo il d-none dall'overlay
+                overlayEl.classList.remove("d-none")
+            })
 
             // Creo un event listener al click sul bottone che aggiungerà nuovamente display none all'overlay 
-
+            btnOverlayEl.addEventListener("click",()=>{
+                overlayEl.classList.add("d-none")
+            })
+             
         });
     })
 
