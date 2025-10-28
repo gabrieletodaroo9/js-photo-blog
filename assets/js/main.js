@@ -6,7 +6,7 @@
 const rowEl = document.getElementById("row")
 
 // Effettuo una chiamata AJAX con fetch per estrarre i dati dall'API
-url = "https://lanciweb.github.io/demo/api/pictures/"
+const url = "https://lanciweb.github.io/demo/api/pictures/"
 fetch(url)
     .then(res => res.json())
     .then(data => {
