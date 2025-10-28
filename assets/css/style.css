@@ -69,8 +69,13 @@ main {
 .polaroid:hover {
     cursor: pointer;
     transition: transform 0.5s ease;
-    transform: rotate(20deg);
+    transform: rotate(15deg);
     scale: 1.1;
+    .pin {
+        display: none;
+    }
+    
+
 }
 
 .overlay {

@@ -91,7 +91,6 @@ fetch(url)
             btnOverlayEl.addEventListener("click",()=>{
                 overlayEl.classList.add("d-none")
             })
-             
         });
     })
 
