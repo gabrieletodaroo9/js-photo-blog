@@ -77,6 +77,9 @@ fetch(url)
 
             console.log(overlayEl, btnOverlayEl, imgOverlayEl);
 
+            // Prendo il nodo della DOM del body
+            const bodyEl = document.querySelector("body")
+
             // Creo un event listener al click sulla polaroid
             polaroidEl.addEventListener("click", () => {
 
@@ -85,12 +88,19 @@ fetch(url)
 
                 // -Rimuovo il d-none dall'overlay
                 overlayEl.classList.remove("d-none")
+
+                // Assegno al body la classe overflow-hidden
+                bodyEl.classList.add("overflow-hidden")
             })
 
             // Creo un event listener al click sul bottone che aggiungerà nuovamente display none all'overlay 
-            btnOverlayEl.addEventListener("click",()=>{
+            btnOverlayEl.addEventListener("click", () => {
                 overlayEl.classList.add("d-none")
+                // Rimuovo dal body la classe overflow-hidden
+                bodyEl.classList.remove("overflow-hidden")
             })
+
+
         });
     })
 
