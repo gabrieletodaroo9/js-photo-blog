@@ -57,7 +57,7 @@ fetch(url)
             // Aggiungo il nodo al div "polaroid"
             polaroidEl.appendChild(dateEl)
             // console.log(colEl);
-            
+
             // Creo il secondo paragrafo (testo)
             const titleEl = document.createElement("p")
             // Aggiungo il testo col template literal e lo rendo maiuscolo
@@ -65,10 +65,20 @@ fetch(url)
             // Aggiungo il nodo al div "polaroid"
             polaroidEl.appendChild(titleEl)
             console.log(colEl);
-            
+
             // Inserisco dentro l'elemento row dinamicamente la colonna che abbiamo creato
             rowEl.appendChild(colEl)
+
+            // Seleziono i nodi della DOM relativi all'overlay, quello relativo al bottone e quello relativo all'img dentro l'overlay
             
+            // Creo un event listener al click sulla polaroid
+            
+            // -Cambio dinamicamente l'src dell'img dentro l'overlay 
+
+            // -Rimuovo il d-none dall'overlay
+
+            // Creo un event listener al click sul bottone che aggiungerà nuovamente display none all'overlay 
+
         });
     })
 
