@@ -4,15 +4,12 @@ Un photo blog responsive che carica dinamicamente una galleria fotografica trami
 
 Il progetto punta sulla pulizia estetica e sulla gestione interattiva del DOM per offrire un'esperienza utente fluida e moderna.
 
----
 
 ### Demo
 
-<video src="assets/demo/jsphotoblog.mp4" width="800" controls muted>
-  Il tuo browser non supporta il video.
+<video src="./assets/demo/jsphotoblog.mp4" width="800" controls muted>
 </video>
 
----
 
 ### Tecnologie utilizzate
 * **HTML / CSS**
