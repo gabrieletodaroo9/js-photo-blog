@@ -1,14 +1,13 @@
-# JS Photo Blog - Estate '24 📸
+# JS Photo Blog - Estate '24
 
-Un photo blog responsive che carica dinamicamente una galleria fotografica tramite **JavaScript Vanilla**, integrando **Bootstrap 5** per il layout e un sistema di **overlay personalizzato** per la visualizzazione delle immagini a schermo intero. 
+Un photo blog responsive che carica dinamicamente una galleria fotografica tramite **JavaScript Vanilla**, integrando **Bootstrap** per il layout e un sistema di **overlay personalizzato** per la visualizzazione delle immagini a schermo intero. 
 
-Il progetto punta sulla pulizia estetica e sulla gestione interattiva del DOM per offrire un'esperienza utente fluida e moderna.
+Il progetto punta sulla gestione interattiva del DOM per offrire un'esperienza utente fluida e moderna.
 
 
 ### Demo
 
-<video src="./assets/demo/jsphotoblog.mp4" width="800" controls muted>
-</video>
+<img src="./assets/demo/jsphotoblog.gif" alt="Demo JS Photo Blog" width="800">
 
 
 ### Tecnologie utilizzate
